@@ -1,17 +1,17 @@
-def multiply(first_number, second_number):
-    return first_number * second_number
-
-
-def divide(first_number, second_number):
-    return first_number / second_number
-
-
 def addition(first_number, second_number):
     return first_number + second_number
 
 
 def subtraction(first_number, second_number):
     return first_number - second_number
+
+
+def multiply(first_number, second_number):
+    return first_number * second_number
+
+
+def divide(first_number, second_number):
+    return first_number / second_number
 
 
 def calculate(first_number, operator, second_number):
@@ -28,7 +28,7 @@ def calculate(first_number, operator, second_number):
 
 
 def receive_input():
-    val = input.split()
+    val = input().split()
     first_number = int(val[0])
     operator = val[1]
     second_number = int(val[2])
