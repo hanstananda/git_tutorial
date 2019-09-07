@@ -14,6 +14,10 @@ def divide(first_number, second_number):
     return first_number / second_number
 
 
+def power(first_number, second_number):
+    return first_number ** second_number
+
+
 def calculate(first_number, operator, second_number):
     result = "Invalid Input!"
     if operator == "+":
@@ -24,6 +28,8 @@ def calculate(first_number, operator, second_number):
         result = multiply(first_number, second_number)
     elif operator == ":":
         result = divide(first_number, second_number)
+    elif operator == "**":
+        result = power(first_number, second_number)
     print("Result is: ", result)
 
 
