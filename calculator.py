@@ -16,6 +16,11 @@ def divide(first_number, second_number):
 
 def power(first_number, second_number):
     return first_number ** second_number
+def hacky_stuff(first_number, operator, second_number):
+    try:
+        return int(eval(str(first_number)+operator+str(second_number)))
+    except Exception as e:
+        return "Invalid Input!"
 
 
 def calculate(first_number, operator, second_number):
@@ -30,6 +35,8 @@ def calculate(first_number, operator, second_number):
         result = divide(first_number, second_number)
     elif operator == "**":
         result = power(first_number, second_number)
+    else:
+        result = hacky_stuff(first_number, operator, second_number)
     print("Result is: ", result)
 
 
